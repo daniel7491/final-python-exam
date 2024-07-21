@@ -1,5 +1,7 @@
 #!/bin/bash
-cd /home/ubuntu/app
+mkdir app
+cd /home/ec2-user/app
+sudo chown ec2-user:ec2-user /home/ec2-user/app
 docker pull daniel745/python-exam:1
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
