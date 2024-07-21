@@ -5,4 +5,4 @@ sudo chown ec2-user:ec2-user /home/ec2-user/app
 docker pull daniel745/python-exam:1
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
-docker run -d -p 80:80 daniel745/python-exam:1
+docker run -d -p 5000:5000 daniel745/python-exam:1
