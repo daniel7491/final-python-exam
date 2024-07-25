@@ -2,10 +2,10 @@ version: 0.0
 os: linux
 files:
   - source: scripts/deploy_docker.sh
-    destination: /home/ec2-user/scripts/
+    destination: scripts/
 
 hooks:
   AfterInstall:
-    - location: /home/ec2-user/scripts/deploy_docker.sh
+    - location: scripts/deploy_docker.sh
       timeout: 300
       runas: ec2-user
