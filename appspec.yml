@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/app
+    destination: /home/ec2-user/app
 hooks:
   AfterInstall:
-    - location: scripts/deploy_docker.sh
+    - location: /home/ec2-user/scripts/deploy_docker.sh
       timeout: 300
-      runas: root
+      runas: ec2-user
