@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /scripts/deploy_docker.sh
+  - source: scripts/deploy_docker.sh
     destination: /home/ec2-user/scripts/
 
 hooks:
