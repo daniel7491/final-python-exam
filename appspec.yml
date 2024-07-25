@@ -1,8 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ec2-user/app
+  - source: /scripts/deploy_docker.sh
+    destination: /home/ec2-user/scripts/
+
 hooks:
   AfterInstall:
     - location: /home/ec2-user/scripts/deploy_docker.sh
